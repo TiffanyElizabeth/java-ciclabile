@@ -40,4 +40,19 @@ public class Ciclabile {
         }
         return false;
     }
+
+    // bonus : method to add element
+    public void addElemento(int newElement) {
+        int[] revisedArray = new int[this.array.length + 1];
+        int i;
+
+        for (i = 0; i < this.array.length; i++) {
+            revisedArray[i] = this.array[i];
+        }
+
+        revisedArray[i] = newElement;
+
+        this.array = revisedArray;
+    }
+
 }

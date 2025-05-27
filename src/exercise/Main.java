@@ -14,5 +14,15 @@ public class Main {
 
         System.out.println("There are no values left in the specified array.");
 
+        // testing bonus
+        test.addElemento(1);
+        test.addElemento(8);
+
+        System.out.println("The specificed array now contains the following values: ");
+        test.setIndex(0);
+        while (test.hasAncoraElementi()) {
+            int testElement = test.getElementoSuccessivo();
+            System.out.println(testElement);
+        }
     }
 }
